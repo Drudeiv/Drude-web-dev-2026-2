@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+.site-header {
+    background-color: #1a2b4c;
+    color: #e0e0e0;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-info h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.header-info p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.site-main {
+    flex: 1;
+    background-color: #f0f0f0;
+    color: #000000;
+    padding-bottom: 80px;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin: 15px 0 10px 0;;
+    font-size: 1.3rem;
+}
+
+.info-list div {
+    font-size: 1rem;
+    padding: 4px 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.result-line {
+    font-size: 1rem;
+    padding: 4px 0;
+    margin: 0;
+    line-height: 2.0;
+}
+
+.result-item, li {
+    font-size: 1rem;
+    padding: 4px 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.blocks-container {
+    overflow: hidden;
+    margin: 10px 0 0 0;
+}
+
+.block-item {
+    float: left;               
+    border: 2px solid red;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+}
+
+.stat-item {
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 0.8rem 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-info h1 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
